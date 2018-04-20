@@ -1,0 +1,29 @@
+\section{Related Work}
+
+
+
+\subsection{Improving Layouts and Performance}
+
+Optimizing the layout of keyboards has been the central topic of discussion for a soft keyboard design. In fact many papers have sought to understand different layouts and their effects on user text input. Papers such as \cite{Bi:2010:QSK:1753326.1753367, Bi:2016:IDO:2858036.2858421, Oulasvirta:2013:ITT:2470654.2481383}  seek to create new soft keyboard layout to improve user text entry in metrics such as Words per Minute (WPM) and error rate. The papers typically focused around measuring performance of layouts they have created based on certain constraints. Consideration about learnability of the layout is made in some papers~\cite{Bi:2016:IDO:2858036.2858421} where the rationale behind the IJQwerty layout comes as a compromise between efficiency and familiarity with QWERTY.
+
+The conflict between efficiency and learnability can be seen as a spectrum. Papers like~\cite{Bi:2016:IDO:2858036.2858421} define this spectrum by saying a keyboard is more learnable based on its similarity to the traditional QWERTY keyboard. While the approach to this is sound it does not account for incrementing the steps that it takes to learn a new layout. A procedural learning method might make some of the more unfamiliar keyboard layouts like ATOMIK or a freely optimized layout more viable~\cite{Bi:2010:QSK:1753326.1753367}.
+
+\subsection{Field Studies}
+
+The majority of papers appear to focus on a laboratory setting for measuring speed and error rate. However there is still a need for testing user input in a non-laboratory setting. Results can become skewed and laboratory testing data can radically differ from data collected in the field during normal user operation~\cite{reyal2015performance}. This environment of study has a variety of different approaches to be tackled. Assigning users tasks to complete during a specified period of time is an approach covered already~\cite{reyal2015performance}. With that in mind we try to create a field study that measures typical use across any application that a user may need to input text using a modified keyboard installed on the device.
+
+\subsection{User Posture and Positioning Effects}
+Regardless of the layout used, the posture and positioning of the device may have an impact on the input performance as shown by Azenkot and Zhai~\cite{Azenkot:2012:TBD:2371574.2371612}. Users tend to revolve around three known postures of typing when using a soft keyboard. These different postures and tendencies each have differences when it comes to WPM and error rate when using a QWERTY keyboard.
+
+
+\subsection{Key Enlargement}
+Designing a new soft keyboard layout can also mean changes other than repositioning keys. There have been attempts~\cite{Gunawardana:2010:UGK:1719970.1719986, AlFaraj2009}, to demonstrate the viability of a dynamic soft keyboard where key positions and relative sizes are changed based on the likelihood of the next press of a key. The use of the BigKey algorithm outlined in [6] can significantly increase typing efficiency on soft keyboards by almost 25\%. However these algorithms are not applied to different layouts and keyboard schemes.
+
+
+\subsection{Text Suggestions}
+Regardless of the text layout or entry systems, soft keyboards typically have a suggestion algorithm attached that feeds in words that the user is most likely to use. These suggestions can often influence results and can increase the WPM and accuracy of a user's text entry. Quinn and Zhai~\cite{Quinn:2016:CST:2858036.2858305} actually focus on the suggestions box and studied whether suggestion boxes actually afford the WPM increase as one might initially think. This decision to select a suggested word is a context switch that may end up slowing the user down, as opposed to speeding them up. Such a context switch may alter a user's ability to learn a new layout as the suggestion box can serve as a crutch that a user can lean on. 
+
+
+
+\subsection{How we differ}
+The focus on previous experimentation has notably focused on testing for the fastest, most accurate or simplest input method. This paper aims to take a different approach then previous works by attempting to understand how incrementing the learning process affects users. The methods of these previous works have also been held in a laboratory setting with motion capture and eye tracking being a common use~\cite{Azenkot:2012:TBD:2371574.2371612, Gunawardana:2010:UGK:1719970.1719986, AlFaraj2009, Quinn:2016:CST:2858036.2858305}. Our goal is to take user data from the field on use beyond WPM and error rates to better interpret whether new layouts can be taught in a different way.
